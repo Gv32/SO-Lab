@@ -1,0 +1,50 @@
+Parte 1
+
+mkdir soEx01
+cd soEx01
+mkdir src
+mkdir bin
+mkdir test
+cd src
+mkdir include
+mkdir lib
+cd ..
+cd test
+mkdir script
+mkdir results
+
+Parte 2
+
+cp lab01e01in.txt /home/so/soEx01/src
+cd /home/so/soEx01/src
+cp lab01e01in.txt /home/so/soEx01/test
+cp lab01e01in.txt /home/so/soEx01/test/script
+cp lab01e01in.txt /home/so/soEx01/test/results
+
+less /home/myusername/soEx01/test/lab01e01in.txt
+less /home/myusername/soEx01/test/script/lab01e01in.txt
+less /home/myusername/soEx01/test/results/lab01e01in.txt
+
+ls -l /home/myusername/soEx01/test/lab01e01in.txt
+ls -l /home/myusername/soEx01/test/script/lab01e01in.txt
+ls -l /home/myusername/soEx01/test/results/lab01e01in.txt
+
+
+rimanendo su soEx01/src
+rm ../test/lab01e01in.txt
+rm ../test/script/lab01e01in.txt
+rm ../test/results/lab01e01in.txt
+
+andando al direttorio padre
+cd ..
+cp src/lab01e01in.txt test/lab01e01in.txt
+cp src/lab01e01in.txt test/script/lab01e01in.txt
+cp src/lab01e01in.txt test/results/lab01e01in.txt
+
+less test/lab01e01in.txt
+ls -l test/lab01e01in.txt
+rm test/lab01e01in.txt
+less test/lab01e01in.txt
+ls -l test/lab01e01in.txt
+rm test/script/lab01e01in.txt
+rm test/results/lab01e01in.txt
