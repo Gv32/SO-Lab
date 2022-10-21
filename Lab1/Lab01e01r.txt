@@ -1,4 +1,4 @@
-Parte 1
+#Parte 1
 
 mkdir soEx01
 cd soEx01
@@ -13,7 +13,7 @@ cd test
 mkdir script
 mkdir results
 
-Parte 2
+#Parte 2
 
 cp lab01e01in.txt /home/so/soEx01/src
 cd /home/so/soEx01/src
@@ -30,12 +30,12 @@ ls -l /home/myusername/soEx01/test/script/lab01e01in.txt
 ls -l /home/myusername/soEx01/test/results/lab01e01in.txt
 
 
-rimanendo su soEx01/src
+#rimanendo su soEx01/src
 rm ../test/lab01e01in.txt
 rm ../test/script/lab01e01in.txt
 rm ../test/results/lab01e01in.txt
 
-andando al direttorio padre
+#andando al direttorio padre
 cd ..
 cp src/lab01e01in.txt test/lab01e01in.txt
 cp src/lab01e01in.txt test/script/lab01e01in.txt
@@ -48,3 +48,15 @@ less test/lab01e01in.txt
 ls -l test/lab01e01in.txt
 rm test/script/lab01e01in.txt
 rm test/results/lab01e01in.txt
+
+#Parte 3
+
+cp -r soEx01 soEx01backup
+rm -r soEx01
+
+#Parte 4
+
+pwd		#Stampa il path assoluto del direttorio corrente
+wc lab01in.txt	#Stampa numero di righe, parole e caratteri del file passato per argomento
+history		#Stampa la cronologia dei comandi eseguiti su terminale fin ora
+
