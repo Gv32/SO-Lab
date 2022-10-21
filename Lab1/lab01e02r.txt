@@ -1,0 +1,14 @@
+#Esercizio 2
+
+who
+group
+#indicano username e il gruppo di appartenenza
+
+tree /home
+#indica l'albero dei vari direttori
+
+ls -l /home
+#indica i vari permessi appartenenti al direttorio
+
+chmod -r a-r soEx01backup
+#cambia i permessi al direttorio
