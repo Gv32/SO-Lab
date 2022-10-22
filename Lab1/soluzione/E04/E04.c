@@ -12,4 +12,6 @@ int main(int argc, char **argv){
         fprintf (f2, "%c", c);              // Scrive un carattere
     fclose (f1);                            // Chiude il file
     fclose (f2);                            // Chiude il file
+
+    return 0;
 }
