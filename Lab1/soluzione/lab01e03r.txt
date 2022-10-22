@@ -10,3 +10,11 @@ diff lab01e03in.copy lab01e03in.txt		#Vedo le differenze tra i vari file
 diff lab01e03in.copy lab01e03in.sl
 diff lab01e03in.copy lab01e03in.hl
 
+mv lab01e03in.copy lab01e03in.backup		#Rinomino il file e il soft link non funziona più
+
+cat lab01e03.sl					#Il comando riporta errore
+
+touch lab01e03in.copy				#Creo un file con il nome vecchio in modo da far funzionare di nuovo il soft link
+
+cat lab01e03.sl					#Il comando non riporta più errore
+
