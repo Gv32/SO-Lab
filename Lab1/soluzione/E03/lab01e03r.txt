@@ -2,7 +2,7 @@
 
 cp lab01e03in.txt lab01e03in.copy
 ln lab01e03in.copy lab01e03in.hl		#Crea un hard link
-ln lab01e03in.copy lab01e03in.sl		#Crea un soft link
+ln -s lab01e03in.copy lab01e03in.sl		#Crea un soft link
 
 ls -l						#Vedo le dimensioni dei vari file, il .copy e il .hl hanno la stessa dimensione perchè di fatto puntano lo stesso file
 
