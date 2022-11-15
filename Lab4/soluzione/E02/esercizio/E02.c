@@ -6,7 +6,6 @@
 
 void figlio( int fd, int j){
     int v1, v2;
-    int tmp1,tmp2;
     lseek(fd, j*sizeof(int), SEEK_SET);
     read(fd, &v1, sizeof(int));
     lseek(fd, (j+1)*sizeof(int), SEEK_SET);
