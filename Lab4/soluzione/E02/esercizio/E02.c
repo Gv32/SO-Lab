@@ -12,9 +12,9 @@ void figlio( int fd, int j){
     read(fd, &v2, sizeof(int));
     if(v1 > v2){
         lseek(fd, j*sizeof(int), SEEK_SET);
-        tmp1 = write(fd, &v2, sizeof(int));
+        write(fd, &v2, sizeof(int));
         lseek(fd, (j+1)*sizeof(int), SEEK_SET);
-        tmp2 = write(fd, &v1, sizeof(int));
+        write(fd, &v1, sizeof(int));
     }
 }
 
